@@ -26,7 +26,7 @@ public class LicitServiceImpl implements LicitService {
 
 	@Override
 	public int getHighestForUser(int userId) {
-		Optional<Licit> result = licitRepository.findTopByUseridAndOrderByLicitDesc(userId);
+		Optional<Licit> result = licitRepository.findTopByUserIdOrderByLicitDesc(userId);
 		if(result.isEmpty()) {
 			return 0;
 		}

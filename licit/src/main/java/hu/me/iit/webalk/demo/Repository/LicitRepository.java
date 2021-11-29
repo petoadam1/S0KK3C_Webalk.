@@ -8,6 +8,6 @@ public interface LicitRepository extends PagingAndSortingRepository<Licit, Long>
 
 	Optional<Licit> findTopByOrderByLicitDesc();
 
-	Optional<Licit> findTopByUseridAndOrderByLicitDesc(Integer userid);
+	Optional<Licit> findTopByUserIdOrderByLicitDesc(Integer userId);
 	
 }

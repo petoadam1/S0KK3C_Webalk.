@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Licit {
 	private Integer licit;
-	private Integer userid;
+	private Integer userId;
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -15,7 +15,7 @@ public class Licit {
 	public Licit(int licit, int userId) {
 		super();
 		this.licit = licit;
-		this.userid = userId;
+		this.userId = userId;
 	}
 
 	public int getLicit() {
@@ -23,7 +23,7 @@ public class Licit {
 	}
 
 	public Integer getUserid() {
-		return userid;
+		return userId;
 	}
 
 	public void setLicit(int licit) {
@@ -31,7 +31,7 @@ public class Licit {
 	}
 
 	public void setUserid(Integer userId) {
-		this.userid = userId;
+		this.userId = userId;
 	}
 	
 	
